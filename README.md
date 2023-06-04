@@ -2,7 +2,7 @@
 
 npx next dev -p 4000
 
-## Do not forget to indatll before running the above command
+## Do not forget to install before running the above command
 
 ## Kindly note that it is developed for the given figma designs that is 1512 px large screen and mobile screen
 
