@@ -1,3 +1,13 @@
+## Command i used to run
+
+npx next dev -p 4000
+
+## Do not forget to indatll before running the above command
+
+## Kindly note that it is developed for the given figma designs that is 1512 px large screen and mobile screen
+
+## Look into screenshot folders for a sneak peek.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
