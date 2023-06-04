@@ -1,0 +1,15 @@
+.container{
+    background-color: #001A1A;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+
+@media (max-width: 768px) {
+
+.container{
+    padding: 19px;
+}
+}

@@ -1,0 +1,277 @@
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../assets/fonts/IBMPlexMono-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.container {
+  font-family: 'IBM Plex Mono';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh;
+  background-image: url("../assets/Image.png");
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 80%;
+  height: 80px;
+  border-radius: 12px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navlinks li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* .main {
+  padding: 20px;
+} */
+
+.main {
+  padding: 20px;
+  position: relative; /* Added for positioning the text overlay */
+}
+
+.textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  /* width: 100%; */
+  margin-top: 176px;
+}
+
+.welcomeText {
+  font-family: "IBM Plex Mono";
+  font-style: bold;
+  font-size: 140px;
+  line-height: 132px;
+  line-height: 73%;
+  text-align: center;
+  vertical-align: middle;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5) 0%,
+    #ffffff 100%
+  ); /* Added gradient background */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button {
+  padding: 9px 24px 11px 24px;
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navbarleft{
+  display: flex;
+  gap: 50px;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+.closeButton{
+  display: none;
+}
+
+
+.navContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .logo {
+    margin-right: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0px;
+    width: 100%;
+  border-radius: 0px;
+
+  }
+
+  .navbar .logo {
+    margin-right: auto;
+  }
+
+  .navlinks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navlinks li {
+    margin-top: 10px;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    z-index: 9;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    padding-left: 40px;
+
+    /* transform: translateX(0); */
+  }
+
+  .open .navlinks {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    z-index: 10;
+
+
+  }
+
+  .open .navlinks li {
+    margin-top: 20px;
+  }
+
+  .open .button {
+    margin-top: 20px;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .open .hamburger {
+    display: none;
+  }
+
+  /* .navContainer{
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .landingButton button{
+    /* display: flex; */
+  }
+
+  .closeButton {
+    font-size: 23px !important;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+
+  .navbarleft{
+    margin-top: 24px;
+  }
+
+  .navContainer{
+    display: block;
+  }
+
+  .button{
+    position: relative;
+    top: 34%;
+  }
+
+  .navbarleft{
+    justify-content: space-between;
+    gap: 0px;
+    align-items: center;
+  }
+  .welcomeText{
+    font-size: 64px;
+  }
+  
+}

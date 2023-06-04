@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('../assets/fonts/IBMPlexMono-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+.container {
+    padding: 40px 188px 40px 188px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Mono';
+  }
+  
+  .scrollableContainer {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
+    gap: 17px;
+    padding: 5px;
+  }
+  
+  .card {
+    width: 368px;
+    height: 340px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 20px;
+    scroll-snap-align: start;
+    box-shadow: 0px 0px 16px rgba(0, 128, 128, 0.16);
+    /* box-shadow: 10px 10px 5px 12px lightblue; */
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 50%;
+  }
+
+  .imageContainer img{
+    width: 368px;
+    height: 170px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+
+  .containerHeading {
+    font-size: 16px;
+    margin-bottom: 19px;
+    font-weight: 700;
+    color: #001A1A;
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #008080;
+  }
+  
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #001A1A;
+    margin-bottom: 20px;
+  }
+  
+  .arrow {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #0070f3;
+    border-radius: 50%;
+  }
+
+  .arrowContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 24px;
+  }
+
+  .arrowContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circleArrow {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #008080;
+    color: #e6f2f2;
+  }
+
+
+  @media (max-width: 768px) {
+
+
+    .container {
+      padding: 40px 18px 80px 16px;
+    } 
+
+    .card {
+      flex: 0 0 auto;
+      width: 100%; 
+      max-width: 300px; 
+      margin-right: 10px; 
+    }
+    
+
+  }
+  
